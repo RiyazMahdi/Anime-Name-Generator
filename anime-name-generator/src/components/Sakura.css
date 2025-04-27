@@ -1,0 +1,22 @@
+.sakura {
+    position: fixed;
+    top: -10px;
+    width: 25px;
+    height: 25px;
+    background-image: url('/src/assets/sakura-petal.png');
+    background-size: cover;
+    z-index: 10;
+    animation: fall linear infinite;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
